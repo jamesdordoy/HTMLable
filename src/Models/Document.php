@@ -33,7 +33,7 @@ class Document extends Model implements HasMedia, Renderable
         return $this->hasMany(Element::class);
     }
 
-    public function render(bool $local = false): HtmlString
+    public function render(): HtmlString
     {
         $rootElement = $this->getRootElement();
         $docType = $this->getDocType();
