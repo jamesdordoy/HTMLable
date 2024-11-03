@@ -107,10 +107,6 @@ class Document extends Model implements HasMedia, Renderable
             return;
         }
 
-        if ($node->nodeName == "b") {
-            dd($node->nodeValue);
-        }
-
         // Check for <style> tags specifically
         if ($node->nodeName === 'style') {
             // Save the content of the <style> tag
