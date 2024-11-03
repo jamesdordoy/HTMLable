@@ -1,8 +1,8 @@
 <?php
 
-namespace JamesDordoy\HTMLable\Rules\Documents;
+namespace JamesDordoy\HTMLable\Rules\Values;
 
-class CreateElement
+class CreateValue
 {
     public function __invoke(array $additionalRules = []): array
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace JamesDordoy\HTMLable\Rules\Documents;
+namespace JamesDordoy\HTMLable\Rules\Elements;
 
 class CreateElement
 {

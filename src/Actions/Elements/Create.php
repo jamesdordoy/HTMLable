@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use JamesDordoy\HTMLable\Models\Document;
 use JamesDordoy\HTMLable\Models\Element;
-use JamesDordoy\HTMLable\Rules\Documents\CreateElement;
+use JamesDordoy\HTMLable\Rules\Elements\CreateElement;
 
 class Create
 {

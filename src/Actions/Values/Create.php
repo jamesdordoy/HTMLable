@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use JamesDordoy\HTMLable\Models\Element;
 use JamesDordoy\HTMLable\Models\Value;
+use JamesDordoy\HTMLable\Rules\Values\CreateValue;
 
 class Create
 {
@@ -24,11 +25,7 @@ class Create
 
     protected function validate(array $data): array
     {
-        $validator = Validator::make($data, [
-            'key' => 'required',
-            'value' => 'required|nullable',
-            'element_id' => 'required',
-        ]);
+        $validator = Validator::make($data, app(CreateValue::class)());
 
         if ($validator->fails()) {
             throw new ValidationException($validator);
